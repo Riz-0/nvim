@@ -16,6 +16,15 @@ return require('packer').startup(function(use)
   -- Appearance Plugins
   use "RRethy/nvim-base16"
 
+  -- LSP Stuffs
+  use "neovim/nvim-lspconfig" -- Base LSP Plugin
+  use "hrsh7th/nvim-cmp"  -- Autocompletion
+  use "L3MON4D3/LuaSnip"  -- Snippets
+
+  -- Sources for nvim-cmp
+  use "hrsh7th/cmp-nvim-lsp"  -- LSP Source
+  use "saadparwaiz1/cmp_luasnip"  -- LuaSnip Source
+
   -- Syntax Highlighting
   use {
     "nvim-treesitter/nvim-treesitter",
