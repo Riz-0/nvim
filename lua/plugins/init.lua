@@ -32,11 +32,19 @@ return require('packer').startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = function() require("nvim-treesitter.install").update({ with_sync = true }) end,
   }
-
+  
+  -- Commenting Plugin
   use {
     "numToStr/Comment.nvim",
     config = function()
       require("Comment").setup()
+    end
+  }
+
+  use {
+    "windwp/nvim-autopairs",
+    config = function()
+      require("nvim-autopairs").setup()
     end
   }
 
