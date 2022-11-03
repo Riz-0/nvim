@@ -33,6 +33,13 @@ return require('packer').startup(function(use)
     run = function() require("nvim-treesitter.install").update({ with_sync = true }) end,
   }
 
+  use {
+    "numToStr/Comment.nvim",
+    config = function()
+      require("Comment").setup()
+    end
+  }
+
   if packer_bootstrap then
     require('packer').sync()
   end
