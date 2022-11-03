@@ -20,6 +20,8 @@ return require('packer').startup(function(use)
   use "neovim/nvim-lspconfig" -- Base LSP Plugin
   use "hrsh7th/nvim-cmp"  -- Autocompletion
   use "L3MON4D3/LuaSnip"  -- Snippets
+  use "williamboman/mason.nvim" -- LSP Installer
+  use "williamboman/mason-lspconfig.nvim" -- Bridge for mason.nvim and lspconfig
 
   -- Sources for nvim-cmp
   use "hrsh7th/cmp-nvim-lsp"  -- LSP Source
