@@ -12,9 +12,10 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use "wbthomason/packer.nvim"
-  
+
   -- Appearance Plugins
-  use "RRethy/nvim-base16"
+  use "RRethy/nvim-base16"  -- Colourscheme
+  use "nvim-tree/nvim-web-devicons" -- Icons
 
   -- LSP Stuffs
   use "neovim/nvim-lspconfig" -- Base LSP Plugin
@@ -27,12 +28,14 @@ return require('packer').startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"  -- LSP Source
   use "saadparwaiz1/cmp_luasnip"  -- LuaSnip Source
 
+  use "nvim-tree/nvim-tree.lua" -- File Explorer
+
   -- Syntax Highlighting
   use {
     "nvim-treesitter/nvim-treesitter",
     run = function() require("nvim-treesitter.install").update({ with_sync = true }) end,
   }
-  
+
   -- Commenting Plugin
   use {
     "numToStr/Comment.nvim",

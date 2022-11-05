@@ -1,14 +1,13 @@
-require("mason").setup()
-require("mason-lspconfig").setup()
+require("mason").setup({
+  ui = {
+    icons = {
+      package_installed = "✓",
+      package_pending = "➜",
+      package_uninstalled = "✗",
+    },
+  },
+})
 
-local lspconfig = require("plugins.configs.lspconfig")
-
-require("mason-lspconfig").setup_handlers {
-  function (server_name)  -- Default handler
-    require("lspconfig")[server_name].setup {
-      on_attach = lspconfig.on_attach,
-      flags = lspconfig.lsp_flags,
-      capabilities = lspconfig.capabilities,
-    }
-  end,
-}
+require("mason-lspconfig").setup({
+  ensure_installed = { "sumneko_lua", }
+})
