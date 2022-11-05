@@ -5,8 +5,12 @@ vim.keymap.set("n", "[d", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
 vim.keymap.set("n", "]d", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
 vim.keymap.set("n", "<space>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
 
-local M = {}
+vim.diagnostic.config({
+  virtual_text = false, -- Too distracting
+  signs = false,  -- Disabled cause they look bad
+})
 
+local M = {}
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 M.on_attach = function(client, bufnr)
