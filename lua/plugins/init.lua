@@ -18,19 +18,22 @@ return require('packer').startup({function(use)
   use "nvim-tree/nvim-web-devicons" -- Icons
   use "nvim-lualine/lualine.nvim"  -- Status line
   use "akinsho/bufferline.nvim" -- "Tabs"
+  use "nvim-tree/nvim-tree.lua" -- File Explorer
 
   -- LSP Stuffs
   use "neovim/nvim-lspconfig" -- Base LSP Plugin
   use "hrsh7th/nvim-cmp"  -- Autocompletion
-  use "L3MON4D3/LuaSnip"  -- Snippets
   use "williamboman/mason.nvim" -- LSP Installer
   use "williamboman/mason-lspconfig.nvim" -- Bridge for mason.nvim and lspconfig
 
   -- Sources for nvim-cmp
   use "hrsh7th/cmp-nvim-lsp"  -- LSP Source
-  use "saadparwaiz1/cmp_luasnip"  -- LuaSnip Source
+  use "saadparwaiz1/cmp_luasnip"  -- Snippet Completion
 
-  use "nvim-tree/nvim-tree.lua" -- File Explorer
+  -- Snippet Plugins
+  use "L3MON4D3/LuaSnip"  -- Snippet Engine
+  use "rafamadriz/friendly-snippets"  -- Snippet Collection
+
 
   -- Syntax Highlighting
   use {
