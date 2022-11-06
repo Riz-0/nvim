@@ -37,7 +37,7 @@ for k, v in pairs(options) do
 	vim.opt[k] = v
 end
 
-vim.cmd [[colorscheme base16-onedark]]
+vim.cmd [[colorscheme horizon]]
 
 vim.opt.iskeyword:append("-")           -- Treat words with "-" as 1 word
 vim.opt.clipboard:append("unnamedplus") -- Use system clipboard

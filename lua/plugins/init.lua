@@ -14,8 +14,9 @@ return require('packer').startup(function(use)
   use "wbthomason/packer.nvim"
 
   -- Appearance Plugins
-  use "RRethy/nvim-base16"  -- Colourscheme
+  use "ntk148v/vim-horizon"
   use "nvim-tree/nvim-web-devicons" -- Icons
+  use "nvim-lualine/lualine.nvim"  -- Status line
 
   -- LSP Stuffs
   use "neovim/nvim-lspconfig" -- Base LSP Plugin
