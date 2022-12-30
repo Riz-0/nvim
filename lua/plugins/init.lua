@@ -34,9 +34,6 @@ return require('packer').startup({function(use)
   use "L3MON4D3/LuaSnip"  -- Snippet Engine
   use "rafamadriz/friendly-snippets"  -- Snippet Collection
 
-  -- orgmode
-  use "nvim-orgmode/orgmode"
-
   -- Syntax Highlighting
   use {
     "nvim-treesitter/nvim-treesitter",

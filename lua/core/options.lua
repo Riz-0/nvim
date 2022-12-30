@@ -14,7 +14,8 @@ local options = {
 	-- Indentation Options --
 	tabstop = 2,                          -- Number of spaces per tab
 	shiftwidth = 2,                       -- Number of spaces per indentation level
-	expandtab = true,                     -- ronvert tabs to spaces
+	expandtab = true,                     -- Convert tabs to spaces
+  autoindent = true,                    -- Copy indent from current line when starting a new line
 
   -- Cursor Options --
   whichwrap = "hl",                     -- Go to next/previous line when holding h/l instead of stopping
@@ -38,6 +39,7 @@ for k, v in pairs(options) do
 end
 
 vim.cmd [[colorscheme onedark]]
+vim.cmd [[filetype indent off]]
 
 vim.opt.iskeyword:append("-")           -- Treat words with "-" as 1 word
 vim.opt.clipboard:append("unnamedplus") -- Use system clipboard
