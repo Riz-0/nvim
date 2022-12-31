@@ -12,9 +12,9 @@ local options = {
   showmode = false,                     -- Hide mode text in the cmd line
 
 	-- Indentation Options --
-	tabstop = 2,                          -- Number of spaces per tab
-	shiftwidth = 2,                       -- Number of spaces per indentation level
-	expandtab = true,                     -- Convert tabs to spaces
+  tabstop = 4,                          -- Number of spaces per tab
+  shiftwidth = 4,                       -- Number of spaces per indentation level
+  expandtab = true,                     -- Convert tabs to spaces
   autoindent = true,                    -- Copy indent from current line when starting a new line
 
   -- Cursor Options --

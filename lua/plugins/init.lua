@@ -29,6 +29,8 @@ return require('packer').startup({function(use)
   -- Sources for nvim-cmp
   use "hrsh7th/cmp-nvim-lsp"  -- LSP Source
   use "saadparwaiz1/cmp_luasnip"  -- Snippet Completion
+  use "hrsh7th/cmp-buffer"  -- Buffer Completion
+  use "hrsh7th/cmp-path"    -- Path Completion
 
   -- Snippet Plugins
   use "L3MON4D3/LuaSnip"  -- Snippet Engine
