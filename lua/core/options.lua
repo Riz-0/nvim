@@ -8,7 +8,7 @@ local options = {
   signcolumn = "number",                -- Display signs in the number column
   cmdheight = 1,                        -- Set cmd prompt height
   pumheight = 10,                       -- Number of items to show in the cmd pop-up menu
-  wrap = false,                         -- Display long lines off the screen
+  wrap = true,                          -- Wrap long text
   showmode = false,                     -- Hide mode text in the cmd line
 
 	-- Indentation Options --
@@ -25,7 +25,7 @@ local options = {
 
   -- Split Options --
   splitbelow = true,                    -- Open horizontal splits on the bottom
-  splitright = true,                   -- Open vertical splits on the right
+  splitright = true,                    -- Open vertical splits on the right
 
   -- File options --
   fileencoding = "utf-8",               -- Set file encoding
